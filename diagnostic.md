@@ -5,74 +5,83 @@ Place your responses inside the fenced code-blocks where indicated by comments.
 What is the purpose of a backend?
 
 ```md
-// your response here
+The purpose of a back end is to connect clients to servers and store data.
 ```
 
 Which layer in the MVC pattern is used by the controller to fetch data?
 
 ```md
-// your response here
+The model is used by the controller to fetch data.
 ```
 
 Which layer in the MVC pattern communicates with the model?
 
 ```md
-// your response here
+The controller, which contains the business logic communicates with the model.
 ```
 
 Why don't we use views in our interpretation of the MVC pattern?
 
 ```md
-// your response here
+We don't use views because we have single page applications with only one piece of markup.
 ```
 
 What does C.R.U.D stand for?
 
 ```md
-// your response here
+CRUD stands for create, read, update destroy
 ```
 
 In which part of the MVC pattern can we find C.R.U.D actions?
 
 ```md
-// your response here
+CRUD actions are done in the model and controller sections.
 ```
 
 List at least 5 standard rails actions that C.R.U.D requests correspond to?
 
 ```md
-// your response here
+Index, show, create, update, destroy
 ```
 
 A user action fires a `GET` request for `/people/1`. Explain in detail each step
 required for data to be returned to the client. (bullet points or ordered list)
 
 ```md
-// your response here
+The get request is handled by:
+1. The controller which gets the request
+2. The controller passes the request to the model
+3. The model looks in the database to see if there is a person with an id of one
+4. The model returns the response of whether there is or isn't to the controller
+5. THe client displays the result.
 ```
 
 What is the command to generate a new rails-api app?
 
 ```bash
-// your response here
+rails new
 ```
 
 What is the command to start an instance of a rails server?
 
 ```bash
-// your response here
+rails server
 ```
 
 What are the commands to drop, create, migrate and seed a database from the command
 line? (5 bullet points)
 
 ```bash
-// your response here
+1. db:create
+2. db:drop
+3. db:migrate
+4. db:examples
+5. db:seed
 ```
 
 What is the command to scaffold a pet with a name and age attributes (hint:
 Also think of the data types for each attribute)?
 
 ```bash
-// your response here
+rails generate scaffold Pet name:string age:integer
 ```
